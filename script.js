@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-function writePassword() {
+function writePassword() {}
 //   var password = generatePassword();
 //   var passwordText = document.querySelector("#password");
 
@@ -13,8 +13,15 @@ function writePassword() {
   var passwordNumbers = confirm("Would you like to include numbers?")
   var passwordSpecialCharacters = confirm("Would you like to include special characters?");
   
+  
+  var passOption1 = "abcdefghijklmnopqrstuvwxyz".split("");
+  
+  var passOption2 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
-}
+  var passOption3 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".split("");
+
+  var passOption4 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*".split("")
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
