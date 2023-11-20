@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Global box-sizing set to border-box for easier layout calculations */
 }
 
 html,
@@ -9,129 +9,132 @@ body,
 .wrapper {
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0; /* Reset default margin and padding on html, body, and .wrapper */
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
+  font-family: sans-serif; /* Set default font family to sans-serif */
+  background-color: #f9fbfd; /* Set background color for the body */
 }
 
 .wrapper {
-  padding-top: 30px;
+  padding-top: 30px; /* Add padding to the top of .wrapper */
   padding-left: 20px;
   padding-right: 20px;
 }
 
 header {
-  text-align: center;
+  text-align: center; /* Center-align text within the header */
   padding: 20px;
-  padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  padding-top: 0px; /* Set padding for header */
+  color: hsl(206, 17%, 28%); /* Set text color using HSL values */
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
-  font-size: 18px;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 30px 40px;
+  background-color: hsl(0, 0%, 100%); /* Set background color for .card using HSL values */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  border-width: 1px; /* Set border width */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px; /* Add box shadow for a subtle effect */
+  color: hsl(206, 17%, 28%); /* Set text color using HSL values */
+  font-size: 18px; /* Set font size */
+  margin: 0 auto; /* Center .card using margin auto */
+  max-width: 800px; /* Set maximum width for .card */
+  padding: 30px 40px; /* Set padding for .card */
 }
 
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
-  height: 2px;
+  background: #e7e9eb; /* Set background color using hex code */
+  height: 2px; /* Set height for a horizontal line */
 }
 
 .card-body {
-  min-height: 100px;
+  min-height: 100px; /* Set minimum height for .card-body */
 }
 
 .card-footer {
-  text-align: center;
+  text-align: center; /* Center-align text within the footer */
 }
 
 .card-footer::before {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
-  height: 2px;
+  background: #e7e9eb; /* Set background color using hex code */
+  height: 2px; /* Set height for a horizontal line */
 }
 
 .card-footer::after {
   content: " ";
   display: block;
-  clear: both;
+  clear: both; /* Clear floats within .card-footer */
 }
 
 .btn {
+  /* Styling for the button */
   border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
+  background-color: hsl(360, 91%, 36%); /* Set background color using HSL values */
+  border-radius: 25px; /* Add border-radius for rounded corners */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px; /* Add box shadow for a subtle effect */
+  color: hsl(0, 0%, 100%); /* Set text color using HSL values */
   display: inline-block;
-  font-size: 22px;
-  line-height: 22px;
-  margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
-  text-align: center;
-  cursor: pointer;
+  font-size: 22px; /* Set font size */
+  line-height: 22px; /* Set line height */
+  margin: 16px 16px 16px 20px; /* Set margin */
+  padding: 14px 34px; /* Set padding */
+  text-align: center; /* Center-align text within the button */
+  cursor: pointer; /* Set cursor to pointer on hover */
 }
 
 #button[enabled] {
-  cursor: default;
-  background: #c0c7cf;
+  cursor: default; /* Set default cursor style */
+  background: #c0c7cf; /* Set background color using hex code */
 }
 
 .float-right {
-  float: right;
+  float: right; /* Float an element to the right */
 }
 
 #password {
+  /* Styling for the password input */
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
-  border: none;
+  appearance: none; /* Remove default styles for input */
+  border: none; /* Remove borders */
   display: block;
-  width: 100%;
-  padding-top: 15px;
+  width: 100%; /* Set width to 100% */
+  padding-top: 15px; /* Set padding for the top */
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
-  resize: none;
-  overflow: hidden;
+  padding-bottom: 85px; /* Set padding for the bottom */
+  font-size: 1.2rem; /* Set font size */
+  text-align: center; /* Center-align text within the input */
+  margin-top: 10px; /* Set margin for the top */
+  margin-bottom: 10px; /* Set margin for the bottom */
+  border: 2px dashed #c0c7cf; /* Set border style and color */
+  border-radius: 6px; /* Add border-radius for rounded corners */
+  resize: none; /* Disable resizing */
+  overflow: hidden; /* Hide overflowing content */
 }
 
 @media (max-width: 690px) {
+  /* Media query for screens with a maximum width of 690px */
   .btn {
-    font-size: 1rem;
-    margin: 16px 0px 0px 0px;
-    padding: 10px 15px;
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin: 16px 0px 0px 0px; /* Adjust margin */
+    padding: 10px 15px; /* Adjust padding */
   }
 
   #password {
-    font-size: 1rem;
+    font-size: 1rem; /* Adjust font size for smaller screens */
   }
 }
 
 @media (max-width: 500px) {
+  /* Media query for screens with a maximum width of 500px */
   .btn {
-    font-size: 0.8rem;
+    font-size: 0.8rem; /* Further adjust font size for even smaller screens */
   }
 }
