@@ -9,7 +9,14 @@ var generateBtn = document.querySelector("#generate")
 
 function writePassword() {
 
-  const pLength = prompt("How long would you like your password to be? Choose between 8 and 128");
+  let pLength = prompt("How long would you like your password to be? Choose between 8 and 128");
+  pLength = parseInt(pLength);
+  while (pLength < 8 || pLength > 128 || isNaN(pLength)) {
+    pLength = prompt("Invalid response.  Please pick a number between 8 and 128.")
+    pLength = parseInt(pLength);
+  }
+
+
   const pLCase = confirm("Would you like to include lowercase letters?");
   const pUCase = confirm("Would you like to include uppercase letters?");
   const pNum = confirm("Would you like to include numbers?");
@@ -48,7 +55,7 @@ function writePassword() {
     i++
   }
   console.log(password);
-  let str = document.getElementById("password").innerHTML; 
+  let str = document.getElementById("password").innerHTML;
   let res = str.replace("", password);
   document.getElementById("password").innerHTML = res;
 
